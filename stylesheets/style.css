@@ -1,14 +1,15 @@
 /*===============
   Imports
   =============== */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
 
 /*===============
   Global Settings
   =============== */
 * {
+  
+  font-family: Tahoma, sans-serif;
   box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
   border: none;
 }
 
@@ -16,31 +17,45 @@
   Typography
   =============== */
   
-  .name {
-    font-family: Tahoma;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 150%;
-  }
+.name,
+.tag {
+  font-family: Tahoma;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 150%;
+}
 
 /*===============
   Layouts
   =============== */
 body {
+  display: grid;
   background-color: rgb(214, 226, 240);
-  display: flex; 
-  flex-flow: column;
-  height: 95vh;
 }
 
 /*.focus {
 
 }*/
 
+.sidebar {
+  width: 150px;
+}
+
+.portal {
+  width: 25vh;
+  border-radius: 20%;
+  box-shadow: 
+    -15px 5px 20px rgb(215, 0, 113),
+    -5px 5px 20px rgb(162, 0, 124),
+    -0px 5px 20px rgb(100, 0, 141),
+    5px 5px 20px rgb(39, 31, 153),
+    15px 5px 20px rgb(0, 53, 169);
+}
+
 .card {
   
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 10%;
   width: 288px;
   margin: auto;
 }
