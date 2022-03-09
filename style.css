@@ -1,0 +1,66 @@
+/*===============
+  Imports
+  =============== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*===============
+  Global Settings
+  =============== */
+* {
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  border: none;
+}
+
+/*===============
+  Typography
+  =============== */
+
+
+/*===============
+  Layouts
+  =============== */
+body {
+  background-color: rgb(214, 226, 240);
+  display: flex; 
+  flex-flow: column;
+  height: 95vh;
+}
+
+/*.focus {
+
+}*/
+
+.card {
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 288px;
+  margin: auto;
+}
+
+.qr-code {
+  border-radius: 25px;
+  width: 288px;
+  padding: 16px;
+}
+
+.copy {
+  text-align: center;
+  size: .875rem;
+  padding:0px 16px 0px;
+  color: rgb(31, 50, 81);
+}
+
+.instructions {
+  size: .5rem;
+  color:rgb(123, 135, 157);
+}
+
+.attribution {
+  color: rgb(123, 135, 157);
+}
+
+/*===============
+  Components
+  =============== */
