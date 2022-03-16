@@ -1,0 +1,56 @@
+Equality
+== vs ===
+
+    == compares values after doing data conversion
+
+    "32" == 32
+    goes to true because it converts format to match
+    befor comparing the values. *smart* compare - would be a super
+    useful thing in spreadsheets lmao
+
+    "32" === 32
+    does not do any conversions
+
+    primitives only looking at the value, but objects look at 
+    the item in memory - compares same memory pointer?
+
+
+Asynchronous JS
+How does JS run and how do you intereact ywityh Async JS
+
+    original - pass a callback parameter to a function and then runs
+    the callback once the function is done, but that gets messy
+
+    then - use promises: .then - successful promise; and .catch - 
+    for errors
+
+    also - async await syntax for c# - wait for data to come back
+    in-line
+
+
+Error handling
+Try and catch
+
+    Prepare for how people can mess something up and build proactively/defensively with that in mind. Be able to troubleshoot as well
+
+
+ES6 Syntax
+
+    Old vs new JS - ES6 is the modern version. Need to be familiar so that you don't get last
+
+    Destructuring
+    Spread operator
+    Template literal strings - using backticks `
+
+
+Array Methods
+
+    Syntaxes are tricky, esp combining with arrow functions
+
+    Map
+    Filter
+    Reduce
+    Sum
+    Sort
+
+

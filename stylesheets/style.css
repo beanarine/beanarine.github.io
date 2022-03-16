@@ -30,6 +30,9 @@
   =============== */
 body {
   display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
   background-color: rgb(214, 226, 240);
 }
 
@@ -38,48 +41,146 @@ body {
 }*/
 
 .sidebar {
-  width: 150px;
-}
-
-.portal {
-  width: 25vh;
-  border-radius: 20%;
-  box-shadow: 
-    -15px 5px 20px rgb(215, 0, 113),
-    -5px 5px 20px rgb(162, 0, 124),
-    -0px 5px 20px rgb(100, 0, 141),
-    5px 5px 20px rgb(39, 31, 153),
-    15px 5px 20px rgb(0, 53, 169);
-}
-
-.card {
-  
-  background-color: rgb(255, 255, 255);
-  border-radius: 10%;
-  width: 288px;
+  width: 30vh;
   margin: auto;
 }
 
-.qr-code {
-  border-radius: 25px;
-  width: 288px;
-  padding: 16px;
+
+.portal {
+  width: 80%;
+  margin: 10% 0px 0px;
+  display: grid;
+  place-items: center;
 }
 
-.copy {
+.avatar {
+  width:100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.keyboard {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0 .125rem 2px 0px rgba(0, 0, 0, .5);
+}
+
+.piano-key-1,
+.piano-key-2,
+.piano-key-3,
+.piano-key-4,
+.piano-key-5 {
+  width: 20%;
+  max-height: 3rem;
+  padding: 0px;
+  color:aliceblue;
   text-align: center;
-  size: .875rem;
-  padding:0px 16px 0px;
-  color: rgb(31, 50, 81);
+  padding: 1rem 0;
 }
 
-.instructions {
-  size: .5rem;
-  color:rgb(123, 135, 157);
+.piano-key-1 {
+  background-color: rgba(215, 0, 113);
+  z-index: 1;
 }
 
-.attribution {
-  color: rgb(123, 135, 157);
+.piano-key-2 {
+  background-color: rgba(162, 0, 124);
+}
+
+.piano-key-3 {
+  z-index: 1;
+  background-color: rgba(100, 0, 141);
+}
+
+.piano-key-4 {
+  background-color: rgba(39, 31, 153);
+}
+
+.piano-key-5 {
+  z-index: 1;
+  background-color: rgba(0, 53, 169);
+}
+
+.piano-key-1:hover {
+  background-color: rgba(215, 0, 113,.8);
+  z-index: 1;
+  transition: .2s;
+}
+
+.piano-key-2:hover {
+  background-color: rgba(162, 0, 124,.8);
+  transition: .2s;
+}
+
+.piano-key-3:hover {
+  z-index: 1;
+  background-color: rgba(100, 0, 141,.8);
+  transition: .2s;
+}
+
+.piano-key-4:hover {
+  background-color: rgba(39, 31, 153,.8);
+  transition: .2s;
+}
+
+.piano-key-5:hover {
+  background-color: rgba(0, 53, 169,.8);
+  transition: .2s;
+}
+
+.piano-key-1:active {
+  background-color: rgba(215, 0, 113,.4);
+  transition: .2s;
+  z-index: 0;
+  transform: translate(5px, 5px);
+  box-shadow: -5px -5px black;
+}
+
+.piano-key-2:active {
+  background-color: rgba(162, 0, 124,.4);
+  transition: .2s;
+  z-index: 0;
+  transform: translate(5px, 5px);
+  box-shadow: -5px -5px black;
+}
+
+.piano-key-3:active {
+  background-color: rgba(100, 0, 141,.4);
+  transition: .2s;
+  z-index: 0;
+  transform: translate(5px, 5px);
+  box-shadow: -5px -5px black;
+}
+
+.piano-key-4:active {
+  background-color: rgba(39, 31, 153,.4);
+  transition: .2s;
+  z-index: 0;
+  transform: translate(5px, 5px);
+  box-shadow: -5px -5px black;
+}
+
+.piano-key-5:active {
+  background-color: rgba(0, 53, 169,.4);
+  transition: .2s;
+  z-index: 0;
+  transform: translate(5px, 5px);
+  box-shadow: -5px -5px black;
+}
+
+
+.card {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  box-shadow: .825rem 1rem .125rem;
+}
+
+.info-box {
+  margin: .5rem 0 1rem;
+  width: 80%;
 }
 
 /*===============
