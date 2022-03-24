@@ -64,7 +64,6 @@ body {
   display: flex;
   margin: 0px;
   padding: 0px;
-  box-shadow: 0 .125rem 2px 0px rgba(0, 0, 0, .5);
 }
 
 .piano-key-1,
@@ -86,7 +85,8 @@ body {
 }
 
 .piano-key-2 {
-  background-color: rgba(162, 0, 124);
+  background-color: rgba(163, 0, 125);
+  z-index: 1;
 }
 
 .piano-key-3 {
@@ -96,38 +96,23 @@ body {
 
 .piano-key-4 {
   background-color: rgba(39, 31, 153);
+  z-index: 1;
 }
 
 .piano-key-5 {
-  z-index: 1;
+
   background-color: rgba(0, 53, 169);
-}
-
-.piano-key-1:hover {
-  background-color: rgba(215, 0, 113,.8);
   z-index: 1;
-  transition: .2s;
 }
 
-.piano-key-2:hover {
-  background-color: rgba(162, 0, 124,.8);
-  transition: .2s;
-}
-
-.piano-key-3:hover {
-  z-index: 1;
-  background-color: rgba(100, 0, 141,.8);
-  transition: .2s;
-}
-
-.piano-key-4:hover {
-  background-color: rgba(39, 31, 153,.8);
-  transition: .2s;
-}
-
+.piano-key-1:hover,
+.piano-key-2:hover,
+.piano-key-3:hover,
+.piano-key-4:hover,
 .piano-key-5:hover {
-  background-color: rgba(0, 53, 169,.8);
+  z-index: 1;
   transition: .2s;
+  opacity: .7;
 }
 
 .piano-key-1:active {
@@ -135,7 +120,7 @@ body {
   transition: .2s;
   z-index: 0;
   transform: translate(5px, 5px);
-  box-shadow: -5px -5px black;
+  box-shadow: -5px -5px rgba(0,0,0,1);
 }
 
 .piano-key-2:active {
