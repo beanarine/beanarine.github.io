@@ -66,6 +66,10 @@ body {
   padding: 0px;
 }
 
+.keyboard:hover {
+  cursor:pointer;
+}
+
 .piano-key-1,
 .piano-key-2,
 .piano-key-3,
@@ -161,6 +165,9 @@ body {
   display: grid;
   place-items: center;
   box-shadow: .825rem 1rem .125rem;
+  background-image: url("https://github.com/hy-fy/hy-fy.github.io/blob/8e26dfc620650126d6e76117e746fbf9e9120615/images/polka-dots.png?raw=true");
+  background-position: center;
+  background-size: 50%;
 }
 
 .info-box {
