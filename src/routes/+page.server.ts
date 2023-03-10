@@ -1,4 +1,4 @@
-import { query } from '$lib/sanity/sanityClient';
+import { query } from '$lib/sanity/+server';
 import { marked } from 'marked';
 //import type { PageLoad } from './$types';
 
