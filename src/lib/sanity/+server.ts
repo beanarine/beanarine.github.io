@@ -1,21 +1,16 @@
 // sanityClient.js
 import { createClient } from '@sanity/client';
+import { env } from '$env/dynamic/private';
 
 const config = {
-	projectId: process.env.SANITY_API_PROJECT_ID,
-	dataset: process.env.SANITY_API_DATASET,
+	projectId: env.SANITY_API_PROJECT_ID,
+	dataset: env.SANITY_API_DATASET,
 	apiVersion: '2023-03-03', // use current date (YYYY-MM-DD) to target the latest API version
 	useCdn: false
 	// token: process.env.SANITY_SECRET_TOKEN // Only if you want to update content with the client
 };
 
-export const client = createClient({
-	projectId: process.env.SANITY_API_PROJECT_ID,
-	dataset: process.env.SANITY_API_DATASET,
-	apiVersion: '2023-03-03', // use current date (YYYY-MM-DD) to target the latest API version
-	useCdn: false
-	// token: process.env.SANITY_SECRET_TOKEN // Only if you want to update content with the client
-});
+const client = createClient(config);
 
 export const query = async (query: string) => await client.fetch(query);
 
