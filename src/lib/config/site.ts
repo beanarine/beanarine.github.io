@@ -6,7 +6,7 @@ export const site: SiteConfig = {
 	protocol: import.meta.env.DEV ? 'http://' : 'https://',
 	domain: 'beanarine.com/',
 	title: 'bean',
-	subtitle: 'Life and style for the many, not the few',
+	subtitle: '',
 	lang: 'en-US',
 	description: 'Powered by SvelteKit/Sanity',
 	author: {

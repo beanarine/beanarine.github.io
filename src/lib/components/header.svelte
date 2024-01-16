@@ -73,8 +73,11 @@
 				{#if headerConfig.nav}
 					<Nav {path} {title} {pin} {scrollY} nav={headerConfig.nav} />
 				{/if}
-				<a href="/" class="btn btn-ghost normal-case text-lg">
-					{site.title}
+				<a
+					href="/"
+					class="swap-on btn btn-ghost rounded-none normal-case text-lg  transition-all duration-200 border-b border-b-gray-500 -skew-x-[15deg] -translate-x-4"
+				>
+					<span class="px-4 skew-x-[15deg] -translate-x-[0.125rem]">{site.title}</span>
 				</a>
 			</div>
 			<div class="navbar-end">
